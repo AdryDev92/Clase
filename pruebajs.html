@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type="text/javascript">
+      function testDom()
+      {
+        var obj = document.getElementById("parr");
+        obj.innerHTML = "Izi pizi lemon squizy man get rekt";
+      }
+
+      function addrow()
+      {
+        var tabla = document.getElementById("miTabla");                    //crea elemento tabla
+        var fila = document.createElement("tr");                           //crea una fila
+        var columna = document.createElement("td");                        //crea una columna
+        var texto = document.createTextNode("Nuevo texto de ejemplo");    //crea un texto
+        var miCol.appendChild(texto);                                     //agregar texto a la columna
+        var miFila.appendChild(miCol);                                    //agregar columna a fila
+        var tabla.appendChild(miFila);                                    //agrega fila a tabla
+      }
+
+    </script>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <div id="cont">
+      <p id="parr">
+        ¿Que pasó wey?
+      </p>
+    </div>
+    <input type="button" onclick="testDom();" value="MAGIA!">
+<br>
+<br>
+    <table border="1">
+      <tr>
+        <td>
+        Dato 1
+        </td>
+        <td>
+          Dato 2
+        </td>
+        <td>
+          Dato 3
+        </td>
+      </tr>
+    </table>
+<br>
+<br>
+<input type="button" onclick="addrow();" value="agregar fila">
+  </body>
+</html>
