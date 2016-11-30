@@ -8,28 +8,35 @@
       }
 
       function addrow(){
-        var tabla = document.getElementById("miTabla");
-        var fila = document.createElement("tr");
+        var tabla = document.getElementById("miTabla");   //recoge datos del id "miTabla"
+        var fila = document.createElement("tr");    //crea elemento tr
 
+        //crea elemento td
         var columna = document.createElement("td");
         var columna2 = document.createElement("td");
         var columna3 = document.createElement("td");
 
+        //recoge datos de los id especificados
         var posicion = document.getElementById("posicion").value;
         var equipo = document.getElementById("equipo").value;
         var puntos = document.getElementById("puntos").value;
 
+        //crea nodo de texto
         var texto1 = document.createTextNode(posicion);
         var texto2 = document.createTextNode(equipo);
         var texto3 = document.createTextNode(puntos);
 
+        //añade variable texto a columna
         columna.appendChild(texto1);
         columna2.appendChild(texto2);
         columna3.appendChild(texto3);
 
+        //añade variable columna a fila
         fila.appendChild(columna);
         fila.appendChild(columna2);
         fila.appendChild(columna3);
+        
+        //añade variable fila a tabla
         tabla.appendChild(fila);
       }
       function modify(){
