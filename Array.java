@@ -1,37 +1,23 @@
-import java.util.Scanner;
-
+import java.util.*;
 public class Array {
-	public static void main(String[] args) {
+	  public static void main(String[] args) {
 
-	    int filas,cols;
-	    Scanner input = new Scanner(System.in);
-	    int nums[][];
-
-	    System.out.println("Filas:");
-	    filas = input.nextInt();
-
-	    System.out.println("Columnas:");
-	    cols = input.nextInt();
-
-	    nums = new int [filas][cols];
-
-	    for (int i=0; i < filas ;i++ ) {
-		      for (int j=0; j < cols ;j++ ) {
-		    	  System.out.println("["+i+"]["+j+"]: ");
-		    	  nums[i][j] = input.nextInt();
-		      }
-		      System.out.println();
-		    }
-	    
-	    for (int i=0; i < filas ;i++ ) {
-	      for (int j=0; j < cols ;j++ ) {
-	        System.out.printf("%2d", nums[i][j]);
-	      }
-	      System.out.println();
-	    }
-
-
-
-
-	    }
-}
+	Scanner input = new Scanner(System.in);
+	double respuesta;
+	
+	
+	String[] pregunta = new String[5];
+	pregunta[0] = "Eeeeeehhh";
+	pregunta[1] = "Si pero no";
+	pregunta[2] = "Dejame que lo compruebe";
+	pregunta[3] = "Puede que si puede que no";
+	pregunta[4] = "Otro ejemplo";
+	
+	System.out.println("Juaaaan. ¿Puedo hacerte una pregunta?");
+	input.nextLine();
+	
+	respuesta = Math.random()* pregunta.length+0;
+	System.out.println(pregunta[(int) respuesta]);
+	
+	  }
+	}
