@@ -1,4 +1,3 @@
-package codificacion;
 import javax.swing.*;
 
 public class codificacion {
