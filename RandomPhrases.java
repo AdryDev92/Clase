@@ -1,4 +1,4 @@
-public class FrasesAleatorias {
+public class RandomPhrases {
     public static void main (String[] args){
 
         String verbos[]= new String[6];
